@@ -40,8 +40,7 @@ Used git merge to merge a branch to master or merge a branch to the branch it wa
 -git merge branchName
 -use this command while you are in the chosen branch that you want to merge into
     -if branch1 wants to merge into master, use git merge while in master (git merge branch1)
--can also merge branch to the branch you want to merge to
-    -if you are in branch1 and want to merge into master, do git merge master
+    -if you want to merge master into branch1, do git merge master while in branch1 
 
 ## **Step 5.2**: Pushing local repository into remote repository on Github and creating a PR to merge into master
 
@@ -58,3 +57,8 @@ If it is a new branch created locally, need to create an upstream branch in the 
 
 .gitignore file is used to ignore certain files and folders and not save them into remote repository
 -when a file written in the .gitignore file, doing git add . will add all the modified and newly created files but will not stage the files that are written in the .gitignore file
+
+branches ID (if you accidentally delete a branch):
+branching: b758513
+pushing: 2994912
+**note: do not use git branch -D
