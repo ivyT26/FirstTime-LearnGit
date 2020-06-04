@@ -62,9 +62,21 @@ If it is a new branch created locally, need to create an upstream branch in the 
 .gitignore file is used to ignore certain files and folders and not save them into remote repository
 -when a file written in the .gitignore file, doing git add . will add all the modified and newly created files but will not stage the files that are written in the .gitignore file
 
+### Undoing a git command:
+
+Used to undo a commit or a unstage the change.
+-git reset fileName or git reset (unstage changes)
+-git reset HEAD~# (undo a commit; # means you can undo back a certain number of recent commits)
+    -git reset HEAD~1 will undo the last two changes (undos commit and staging as an example)
+-git reset commitHash (from log)
+    -will undo everything past this commit, unsaves changes after commitHash
+-git reset --hard commitHash
+    -will unsave and unstage the changes past this commit AND delete it
+
 ### branches ID (if you accidentally delete a branch):
 use git reflog and locate the branch; ID number is the first set of numbers/letters next to the commit comments (this is why comments are soo important)
 -git reflog to compare current HEAD to previous HEADs
 -git log to see detailed commits
+-when doing git reflog or git log, type in 'q' to exit out of the log
 **note: do not use git branch -D
 -if you do somehow use -D, get the branch back by going git checkout -b branchName lastBranchID
