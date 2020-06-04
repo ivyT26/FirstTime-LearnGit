@@ -24,6 +24,16 @@ Used git commit to save the changes.
 
 Used git push to move changes in local machine to repository in Github.
 
+## **Step 4**: Adding branches to make edits separate from master/main working project
+
+Used git branch to note which branch/es are in the repository.
+-git branch will show the user the branches, the one that is highlighted and starred is the branch the user is currently in
+
+Used git checkout to change to another branch in the repository.
+-git checkout -b branchName to create a new branch and move into the new branch
+-git checkout branchName to move into another exiting branch
+-note: before switching to another branch, commit the changes done so far in the current branch
+
 ## **Step 5.1**: Merging branches into master
 
 Used git merge to merge a branch to master or merge a branch to the branch it was created from.
