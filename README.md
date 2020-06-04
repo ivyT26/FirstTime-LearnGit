@@ -42,6 +42,10 @@ Used git merge to merge a branch to master or merge a branch to the branch it wa
     -if branch1 wants to merge into master, use git merge while in master (git merge branch1)
     -if you want to merge master into branch1, do git merge master while in branch1 
 
+### **5.1 a)** Merge Conflicts
+
+If there is a merge conflict, git will notify you and ask you which changes you want to keep and/or delete. You can modify this within VS code.
+
 ## **Step 5.2**: Pushing local repository into remote repository on Github and creating a PR to merge into master
 
 Used git push to move changes in local repo to remote repo, then make a pull request.
@@ -53,12 +57,14 @@ If it is a new branch created locally, need to create an upstream branch in the 
 -git push --set-upstream origin branchName
 -shorthand of --set-upstream is -u
 
-### Optional stuff: 
+## Optional stuff: 
 
 .gitignore file is used to ignore certain files and folders and not save them into remote repository
 -when a file written in the .gitignore file, doing git add . will add all the modified and newly created files but will not stage the files that are written in the .gitignore file
 
-branches ID (if you accidentally delete a branch):
-branching: b758513
-pushing: 2994912
+### branches ID (if you accidentally delete a branch):
+use git reflog and locate the branch; ID number is the first set of numbers/letters next to the commit comments (this is why comments are soo important)
+-git reflog to compare current HEAD to previous HEADs
+-git log to see detailed commits
 **note: do not use git branch -D
+-if you do somehow use -D, get the branch back by going git checkout -b branchName lastBranchID
