@@ -6,6 +6,7 @@ Practice using git for the first time!
 
 Cloned repository to local machine/windows desktop.
 Saving these changes locally.
+-git clone url of repository on Github
 
 ## **Step 2**: Saving new files made locally into git
 
