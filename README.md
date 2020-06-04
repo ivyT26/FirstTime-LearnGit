@@ -30,6 +30,8 @@ Used git merge to merge a branch to master or merge a branch to the branch it wa
 -git merge branchName
 -use this command while you are in the chosen branch that you want to merge into
     -if branch1 wants to merge into master, use git merge while in master (git merge branch1)
+-can also merge branch to the branch you want to merge to
+    -if you are in branch1 and want to merge into master, do git merge master
 
 ## **Step 5.2**: Pushing local repository into remote repository on Github and creating a PR to merge into master
 
