@@ -27,6 +27,8 @@ Used git push to move changes in local machine to repository in Github.
 
 Used git merge to merge a branch to master or merge a branch to the branch it was created from.
 -git merge branchName
+-use this command while you are in the chosen branch that you want to merge into
+    -if branch1 wants to merge into master, use git merge while in master (git merge branch1)
 
 ## **Step 5.2**: Pushing local repository into remote repository on Github and creating a PR to merge into master
 
