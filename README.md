@@ -31,6 +31,7 @@ Used git branch to note which branch/es are in the repository.
 Used git checkout to change to another branch in the repository.
 -git checkout -b branchName to create a new branch and move into the new branch
 -git checkout branchName to move into another exiting branch
+-note: before switching to another branch, commit the changes done so far in the current branch
 
 ### Optional stuff: 
 
