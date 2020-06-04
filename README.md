@@ -18,6 +18,7 @@ Used git add to track the file(s) made locally and to track files that have been
 Used git commit to save the changes.
 -git commit alone directs you to another page to write the messages, to exit do 'esc :wq'
 -git commit -m "" -m "" allows you to do a commit and create the decriptions for each commit; the first message is the general message while the second one is for the more in depth description
+-git commit -am to add and commit at the same time, only works for modifed files
 
 ## **Step 3**: Moving updates from local machine into a remote repository in Github
 
