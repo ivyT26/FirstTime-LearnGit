@@ -23,6 +23,22 @@ Used git commit to save the changes.
 
 Used git push to move changes in local machine to repository in Github.
 
+## **Step 5.1**: Merging branches into master
+
+Used git merge to merge a branch to master or merge a branch to the branch it was created from.
+-git merge branchName
+
+## **Step 5.2**: Pushing local repository into remote repository on Github and creating a PR to merge into master
+
+Used git push to move changes in local repo to remote repo, then make a pull request.
+
+What is a pull request?
+-it is a request/extra step to allow other developers to check on the change before merging the branch into master
+
+If it is a new branch created locally, need to create an upstream branch in the remote repository before pushing.
+-git push --set-upstream origin branchName
+-shorthand of --set-upstream is -u
+
 ### Optional stuff: 
 
 .gitignore file is used to ignore certain files and folders and not save them into remote repository
