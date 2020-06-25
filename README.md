@@ -2,11 +2,13 @@
 
 Practice using git for the first time!
 
-## **Step 1**: Cloning and saving commits locally
+## **Step 1**: Cloning repo or creating local repo
 
-Cloned repository to local machine/windows desktop.  
-Saving these changes locally.
-- git clone url of repository on Github
+Clone repository to local machine/windows desktop.  
+- git clone url of repository on Github  
+
+Create a local repository.  
+- git init  
 
 ## **Step 2**: Saving new files made locally into git
 
@@ -20,9 +22,24 @@ Used git commit to save the changes.
 - git commit -m "" -m "" allows you to do a commit and create the decriptions for each commit; the first message is the general message while the second one is for the more in depth description  
 - git commit -am to add and commit at the same time, only works for modifed files
 
-## **Step 3**: Moving updates from local machine into a remote repository in Github
+## **Step 3.1**: Moving updates from local machine into a remote repository in Github
 
-Used git push to move changes in local machine to repository in Github.
+Used git push to move changes in local machine to repository in Github.  
+- git push origin master  
+
+If repository was created locally and there is no remote repository, need to create an empty remote repository on Github.  
+Next, copy the link from when you would clone the repository. (link ends with .git)  
+Then create a reference to the remote repository.  
+- git remote add origin link  
+
+## **Step 3.2**: Moving updates from remote repository online (like Github) into a local repository and updating it
+
+Used git pull to move changes in remote repository on Github to local machine's repository.  
+git pull is a combined command of git fetch and git merge.  
+- git pull  
+
+git fetch is the 'safer' option of git pull because it only downloads the contents from remote repo into local repo without merging it into the local repo.  
+To access the fetched content, need to use git checkout to visit the branch. (will be in the form of something like remote-repo/branchName)  
 
 ## **Step 4**: Adding branches to make edits separate from master/main working project
 
