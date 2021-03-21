@@ -91,6 +91,10 @@ If it is a new branch created locally, need to create an upstream branch in the 
 .gitignore file is used to ignore certain files and folders and not save them into remote repository
 - when a file written in the .gitignore file, doing *git add .* will add all the modified and newly created files but will not stage the files that are written in the .gitignore file
 
+## Getting Status of git commits:
+use git status to see what components have been added and are ready to be commited to the repo
+- git status
+
 ### Undoing a git command:
 
 Used to undo a commit or a unstage the change.
