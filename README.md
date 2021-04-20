@@ -25,7 +25,10 @@ Used git commit to save the changes.
 ## **Step 3.1**: Moving updates from local machine into a remote repository in Github
 
 Used git push to move changes in local machine to repository in Github.  
-- git push origin master  
+- git push origin <branch_name>, where branch_name is the name of the existing branch in the remote repo you want to push your local branch
+
+Push local branch into a new branch in your remote repo
+- git push origin <local_branch>:<remote_name>   
 
 If repository was created locally and there is no remote repository, need to create an empty remote repository on Github.  
 Next, copy the link from when you would clone the repository. (link ends with .git)  
@@ -54,6 +57,9 @@ Used git checkout to change to another branch in the repository.
 - git checkout -b branchName to create a new branch and move into the new branch  
 - git checkout branchName to move into another exiting branch  
 - note: before switching to another branch, commit the changes done so far in the current branch
+
+Delete branch
+- git branch -d <branch_name>
 
 ## **Step 4.2**: Checking differences between branches or files and statuses of branches or files
 
