@@ -40,11 +40,15 @@ git pull is a combined command of git fetch and git merge.
 
 git fetch is the 'safer' option of git pull because it only downloads the contents from remote repo into local repo without merging it into the local repo.  
 To access the fetched content, need to use git checkout to visit the branch. (will be in the form of something like remote-repo/branchName)  
+- git fetch origin <branch_name>, where 'origin' is usually the remote repo if you only have 1
 
 ## **Step 4.1**: Adding branches to make edits separate from master/main working project
 
 Used git branch to note which branch/es are in the repository.
-- git branch will show the user the branches, the one that is highlighted and starred is the branch the user is currently in
+- git branch will show the user the local branches, the one that is highlighted and starred is the branch the user is currently in
+- git branch -a displays all local and remote branches
+- git branch -r displays all remote branches
+- git show-branch displays the branches and the commits made to each local branch (use -a and -r for the same reasons in last 2 bullet points)
 
 Used git checkout to change to another branch in the repository.
 - git checkout -b branchName to create a new branch and move into the new branch  
