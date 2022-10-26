@@ -22,6 +22,10 @@ Used git commit to save the changes.
 - git commit -m "" -m "" allows you to do a commit and create the decriptions for each commit; the first message is the general message while the second one is for the more in depth description  
 - git commit -am to add and commit at the same time, only works for modifed files
 
+Saving all files of different statuses, whether it is a new file, a modified file, or a deleted file.
+- git add --all
+*Note: git add --all will ignore files delared in the .gitignore file.
+
 ## **Step 3.1**: Moving updates from local machine into a remote repository in Github
 
 Used git push to move changes in local machine to repository in Github.  
