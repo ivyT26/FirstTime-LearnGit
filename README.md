@@ -23,8 +23,8 @@ Used git commit to save the changes.
 - git commit -am to add and commit at the same time, only works for modifed files
 
 Saving all files of different statuses, whether it is a new file, a modified file, or a deleted file.
-- git add --all
-*Note: git add --all will ignore files delared in the .gitignore file.
+- git add --all  
+*Note: git add --all will ignore files delared in the .gitignore file.  
 
 ## **Step 3.1**: Moving updates from local machine into a remote repository in Github
 
