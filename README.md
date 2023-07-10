@@ -116,6 +116,12 @@ Used to undo a commit or a unstage the change.
     - will undo everything past this commit, unsaves changes after commitHash
 - git reset --hard commitHash
     - will unsave and unstage the changes past this commit AND delete it
+- git revert
+    - will undo all the changes in the files and create a new commit noting up to which the commit was reverted back to  
+
+When to use git reset vs git revert
+- if working on a local repo and the changes haven't been pushed remotely, use git reset
+- if working on a local repo and the changes were already pushed remotely, use git revert. this creates a new commit and can get rid of your mistakes without ruining the commit history for everyone else
 
 ### branches ID (if you accidentally delete a branch):
 use git reflog and locate the branch; ID number is the first set of numbers/letters next to the commit comments (this is why comments are soo important)
